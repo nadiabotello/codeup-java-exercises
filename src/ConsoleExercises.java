@@ -30,15 +30,20 @@ public class ConsoleExercises {
 
         System.out.print("Please enter length x width of classroom:\n");
 
-        String perimeterInput = scanner.nextLine();
-        int intConversion = Integer.parseInt(perimeterInput);
-        int area = intConversion * intConversion;
-        int perimeter = intConversion + intConversion + intConversion + intConversion;
+//        String perimeterInput = scanner.nextLine();
+//        int intConversion = Integer.parseInt(perimeterInput);
+//        int area = intConversion * intConversion;
+//        int perimeter = intConversion + intConversion + intConversion + intConversion;
+//
+//        System.out.println("You entered: --> \"" + intConversion + "\" <-- \n The area is: " + area + ". \n The perimeter is: " + perimeter + ".");
 
-        System.out.println("You entered: --> \"" + intConversion + "\" <-- \n The area is: " + area + ". \n The perimeter is: " + perimeter + ".");
 
+        int perimeterInput = scanner.nextInt();
+        scanner.useDelimiter("\n");
+        int area = perimeterInput * perimeterInput;
+        int perimeter = perimeterInput + perimeterInput + perimeterInput + perimeterInput;
 
-
+        System.out.println("You entered: --> \"" + perimeterInput + "\" <-- \n The area is: " + area + ". \n The perimeter is: " + perimeter + ".");
 
 
 
