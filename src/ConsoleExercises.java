@@ -38,12 +38,17 @@ public class ConsoleExercises {
 //        System.out.println("You entered: --> \"" + intConversion + "\" <-- \n The area is: " + area + ". \n The perimeter is: " + perimeter + ".");
 
 
-        int perimeterInput = scanner.nextInt();
-        scanner.useDelimiter("\n");
-        int area = perimeterInput * perimeterInput;
-        int perimeter = perimeterInput + perimeterInput + perimeterInput + perimeterInput;
+//        int perimeterInput = scanner.nextInt();
 
-        System.out.println("You entered: --> \"" + perimeterInput + "\" <-- \n The area is: " + area + ". \n The perimeter is: " + perimeter + ".");
+//        scanner.useDelimiter("\n");
+
+        int lengthInput = scanner.nextInt();
+        int widthInput = scanner.nextInt();
+
+        int area = lengthInput * widthInput;
+        int perimeter = lengthInput + lengthInput + widthInput + widthInput;
+
+        System.out.println("You entered: --> \"" + lengthInput + " " + widthInput + "\" <-- \n The area is: " + area + ". \n The perimeter is: " + perimeter + ".");
 
 
 
