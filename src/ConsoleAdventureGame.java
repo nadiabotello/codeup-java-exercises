@@ -35,7 +35,7 @@ public class ConsoleAdventureGame {
             // display user stats
 
             int userHealthN = rand.nextInt(10);
-            int userAttackN = rand.nextInt(10);
+            int userAttackN = rand.nextInt(50);
 
             System.out.println("/////////////////////////// \n");
             System.out.printf("%s's STATS -- \n", heroName);
