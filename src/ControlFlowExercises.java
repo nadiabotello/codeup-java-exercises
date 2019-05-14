@@ -2,12 +2,17 @@ public class ControlFlowExercises {
     public static void main(String[] args) {
 
 
-        int i = 100;
+        long i = 2;
 
         do {
             System.out.println("i = " + i);
-            i -= 5;
-        } while (i >= -10);
+            i *= i;
+        } while (i < 1000000);
+
+//        for(long i = 2; i < 1000000; i *= i) {
+//            System.out.println(i);
+//        }
+
 
 
     }
