@@ -115,8 +115,6 @@ public static void dice(){
         Scanner scanner = new Scanner(System.in);
         Random random = new Random();
 
-        int diceSides = 6;
-
         System.out.print("Please enter the number of sides on a pair of dice: ");
 
         int answer = scanner.nextInt();
@@ -129,7 +127,7 @@ public static void dice(){
 
             for (int i = 0; i < 1; i++)
             {
-                int roll = random.nextInt(10) + 1;
+                int roll = random.nextInt(answer) + 1;
                 System.out.println("You rolled a " + roll);
             }
 
