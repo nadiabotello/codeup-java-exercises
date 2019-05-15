@@ -85,13 +85,13 @@ public class MethodsExercises {
 
         int num = scanner.nextInt();
 
-        System.out.printf("You entered factorial number: !" + num + " \nWould you like to continue?");
+        if (num >= 0 & num <= 10) {
+            System.out.print("You entered factorial number: !" + num + " \nWould you like to continue?");
+            String answer = scanner.next();
 
-        String answer = scanner.next();
+            if (answer.equalsIgnoreCase("yes")){
 
-        if (answer.equalsIgnoreCase("yes")){
-
-            System.out.println("Here is your factorial output --");
+                System.out.println("Here is your factorial output --");
 
                 long result = 1;
 
@@ -101,11 +101,11 @@ public class MethodsExercises {
                 }
 
                 return result;
-            }
-
-            return num;
+            }  } else {
+            System.out.print("Reload and try again.");
         }
+        return num;
     }
 
 
-
+}
