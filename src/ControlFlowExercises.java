@@ -1,24 +1,23 @@
+import java.util.Scanner;
+
 public class ControlFlowExercises {
     public static void main(String[] args) {
 
+        int num, i, squared;
 
-        for(int i = 0; i <= 100; i++) {
+        Scanner scanner = new Scanner(System.in);
 
-                if(i % 3 == 0) {
-                    System.out.println("Fizz");
-                    continue;
-                } else if (i % 5 == 0) {
-                    System.out.println("Buzz");
-                    continue;
-                } else if (i % 15 == 0) {
-                    System.out.println("FizzBuzz");
-                    break;
-                }
+        System.out.printf("Please enter a number from 1 to 5: \n");
+        num = scanner.nextInt();
 
-            System.out.println(i);
+        System.out.print("number | squared | cubed \n");
+
+        for(i=1; i<=10; i++)
+        {
+            squared = num*num;
+            System.out.print(num + squared + num + "\n");
+        }
         }
 
 
-
     }
-}
