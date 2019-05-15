@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.Random;
 
 public class MethodsExercises {
 
@@ -11,6 +12,7 @@ public class MethodsExercises {
 //        printTotals(getMulti(10, 2));
 //        getInteger(1, 10);
 //        factorial();
+        dice();
     }
 
 //    public static int addition(int a, int b){
@@ -111,6 +113,7 @@ public class MethodsExercises {
 public static void dice(){
 
         Scanner scanner = new Scanner(System.in);
+        Random random = new Random();
 
         int diceSides = 6;
 
@@ -123,6 +126,12 @@ public static void dice(){
         String diceRoll = scanner.next();
 
         if (diceRoll.equalsIgnoreCase("y")){
+
+            for (int i = 0; i < 1; i++)
+            {
+                int roll = random.nextInt(10) + 1;
+                System.out.println("You rolled a " + roll);
+            }
 
         }
 
