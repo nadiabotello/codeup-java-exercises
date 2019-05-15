@@ -10,7 +10,7 @@ public class MethodsExercises {
 //        printTotals(modulus(3, 1));
 //        printTotals(getMulti(10, 2));
 //        getInteger(1, 10);
-        factorial();
+//        factorial();
     }
 
 //    public static int addition(int a, int b){
@@ -77,35 +77,38 @@ public class MethodsExercises {
 //        return num;
 //    }
 
-    public static long factorial(){
+//    public static long factorial(){
+//
+//        Scanner scanner = new Scanner(System.in);
+//
+//        System.out.print("Enter a number between 1 and 10: ");
+//
+//        int num = scanner.nextInt();
+//
+//        if (num >= 0 & num <= 10) {
+//            System.out.print("You entered factorial number: !" + num + " \nWould you like to continue?");
+//            String answer = scanner.next();
+//
+//            if (answer.equalsIgnoreCase("yes")){
+//
+//                System.out.println("Here is your factorial output --");
+//
+//                long result = 1;
+//
+//                for (int factor = 2; factor <= num; factor++) {
+//                    result *= factor;
+//                    System.out.println(result);
+//                }
+//
+//                return result;
+//            }  } else {
+//            System.out.print("Reload and try again.");
+//        }
+//        return num;
+//    }
+//}
 
-        Scanner scanner = new Scanner(System.in);
-
-        System.out.print("Enter a number between 1 and 10: ");
-
-        int num = scanner.nextInt();
-
-        if (num >= 0 & num <= 10) {
-            System.out.print("You entered factorial number: !" + num + " \nWould you like to continue?");
-            String answer = scanner.next();
-
-            if (answer.equalsIgnoreCase("yes")){
-
-                System.out.println("Here is your factorial output --");
-
-                long result = 1;
-
-                for (int factor = 2; factor <= num; factor++) {
-                    result *= factor;
-                    System.out.println(result);
-                }
-
-                return result;
-            }  } else {
-            System.out.print("Reload and try again.");
-        }
-        return num;
-    }
-
+public static void dice(){
 
 }
+    }
