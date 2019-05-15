@@ -5,6 +5,7 @@ public class MethodsExercises {
         printTotals(multiplication(5,4));
         printTotals(division(10, 2));
         printTotals(modulus(3, 1));
+        printTotals(getMulti(10, 2));
     }
 
     public static int addition(int a, int b){
@@ -39,6 +40,14 @@ public class MethodsExercises {
 
     public static void printTotals(int total){
         System.out.println(total);
+    }
+
+    public static int getMulti(int a, int b) {
+        int result = 1;
+        for (int i = 1; i <= a; i++) {
+            result = a * b;
+        }
+        return result;
     }
 
 
