@@ -4,6 +4,7 @@ public class MethodsExercises {
         printTotals(subtraction(10, 4));
         printTotals(multiplication(5,4));
         printTotals(division(10, 2));
+        printTotals(modulus(3, 1));
     }
 
     public static int addition(int a, int b){
@@ -27,6 +28,12 @@ public class MethodsExercises {
     public static int division(int a, int b){
         int total;
         total = a / b;
+        return total;
+    }
+
+    public static int modulus(int a, int b){
+        int total;
+        total = a % b;
         return total;
     }
 
