@@ -110,5 +110,24 @@ public class MethodsExercises {
 
 public static void dice(){
 
+        Scanner scanner = new Scanner(System.in);
+
+        int diceSides = 6;
+
+        System.out.print("Please enter the number of sides on a pair of dice: ");
+
+        int answer = scanner.nextInt();
+
+        System.out.print("Roll your dice? [Y/N]");
+
+        String diceRoll = scanner.next();
+
+        if (diceRoll.equalsIgnoreCase("y")){
+
+        }
+
+
+
+
 }
     }
