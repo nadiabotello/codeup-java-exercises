@@ -128,9 +128,13 @@ public static void dice(){
             for (int i = 0; i < 1; i++)
             {
                 int roll = random.nextInt(answer) + 1;
-                System.out.println("You rolled a " + roll);
+                System.out.println("You rolled a " + roll + "\n\n Would you like to roll, again? [Y/N]");
+                String answer3 = scanner.next();
+
             }
 
+        } else {
+            System.out.println("Bad gamer.");
         }
 
 
