@@ -110,6 +110,10 @@ public class MethodsExercises {
 //    }
 //}
 
+
+
+
+
 public static void dice(){
 
         Scanner scanner = new Scanner(System.in);
@@ -123,22 +127,24 @@ public static void dice(){
 
         String diceRoll = scanner.next();
 
+
         if (diceRoll.equalsIgnoreCase("y")){
 
-            for (int i = 0; i < 1; i++)
-            {
-                int roll = random.nextInt(answer) + 1;
-                System.out.println("You rolled a " + roll + "\n\n Would you like to roll, again? [Y/N]");
-                String answer3 = scanner.next();
+            do {
 
-            }
+                for (int i = 0; i < 1; i++)
+                {
+                    int roll = random.nextInt(answer) + 1;
+                    System.out.println("You rolled a " + roll + "\n\n Would you like to roll, again? [Y/N]");
+                    String answer3 = scanner.next();
 
-        } else {
-            System.out.println("Bad gamer.");
+                }
+
+            } while (diceRoll.equalsIgnoreCase("y"));
+
+        } else if (diceRoll.equalsIgnoreCase("n")) {
+            System.out.println("Thanks for playing.");
         }
 
 
-
-
-}
-    }
+    }}
