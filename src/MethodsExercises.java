@@ -33,8 +33,8 @@ public class MethodsExercises {
         return total;
     }
 
-    public static int division(int a, int b){
-        int total;
+    public static double division(double a, double b){
+        double total;
         total = a / b;
         return total;
     }
@@ -45,7 +45,7 @@ public class MethodsExercises {
         return total;
     }
 
-    public static void printTotals(int total){
+    public static void printTotals(double total){
         System.out.println(total);
     }
 
@@ -65,19 +65,20 @@ public class MethodsExercises {
 
         int num = scanner.nextInt();
 
-        for (int i = 1; i <= max; i++) {
-            if (num >= 0 & num <= 10) {
+//        for (int i = 1; i <= max; i++) {
+            if (num >= min & num <= max) {
                 System.out.println("You are within range.");
+                return num;
 
             } else {
                 System.out.print("Please enter a number ONLY between 1 and 10: ");
-                int num2 = scanner.nextInt();
-                System.out.print("Works");
+                return getInteger(min, max);
             }
-            return num;
         }
-        return num;
-    }
+//        return num;
+//    }
+
+
 
     public static long factorial(){
 
