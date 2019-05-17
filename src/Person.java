@@ -2,11 +2,6 @@ public class Person {
 
     private String name;
 
-    public Person(String name) {
-        this.name = name;
-    }
-
-
     public String getName() {
         return name;
     }
@@ -15,17 +10,15 @@ public class Person {
         this.name = name;
     }
 
-    public void sayHello(String name) {
-        System.out.println(name);
+    public void sayHello() {
+        System.out.printf("Hi from: " + name);
     }
 
+    public static void main(String[] args) {
 
-    public void main(String[] args) {
-
-        Person nadia = new Person("nadia");
-
-        sayHello("nadia");
-
+        Person nadia = new Person();
+        nadia.name = "Nadia";
+        nadia.sayHello();
     }
 
 
