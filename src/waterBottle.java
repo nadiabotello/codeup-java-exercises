@@ -27,5 +27,10 @@ class Waterbottle {
         alexandra.material = "Blue sky stainless steel";
         System.out.println(alexandra.yourBottle());
 
+        Waterbottle sam = new Waterbottle();
+        sam.brand = "Contigo";
+        sam.material = "Orange plastic";
+        System.out.println(sam.yourBottle());
+
     }
 }
