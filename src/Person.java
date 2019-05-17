@@ -8,7 +8,7 @@ public class Person {
 
     public void setName(String name) {
         this.name = name;
-        System.out.println("Your new name is: " + name);
+        System.out.println("Your updated name is: " + name);
     }
 
     public void sayHello() {
@@ -22,7 +22,7 @@ public class Person {
 
         nadia.sayHello();
         System.out.println(nadia.getName());
-        nadia.setName("Fer");
+        nadia.setName("Nadia B.");
     }
 
 
