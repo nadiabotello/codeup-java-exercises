@@ -77,7 +77,7 @@ public class Input {
 
     public double getDouble(){
 
-        System.out.println("Try a double.");
+        System.out.println("Enter a radius.");
         return this.scanner.nextDouble();
     }
 
