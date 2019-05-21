@@ -25,9 +25,12 @@ public class MoviesApplication {
         if (input.getInt() == 1){
 
             for (Movie movie : Movies) {
-                System.out.println(movie);
+                System.out.println(movie.getName() + " -- " + movie.getCategory());
             }
 
         }
 
-}}
+
+
+
+    }}
