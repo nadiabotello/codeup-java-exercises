@@ -6,13 +6,13 @@ public class ShapesTest {
 
         Rectangle rectangle = new Rectangle(4, 5);
 
-        int box1 = rectangle.getPerimeter();
+        double box1 = rectangle.getPerimeter();
 //        int box1 = rectangle.getArea();
         System.out.println(box1);
 
         Rectangle square = new Square(5);
 //        int box2 = square.getPerimeter();
-        int box2 = square.getArea();
+        double box2 = square.getArea();
         System.out.println(box2);
 
     }
