@@ -8,7 +8,7 @@ public class Square extends Rectangle {
 
     @Override
     public double getArea () {
-        return super.length * super.length;
+        return Math.pow(super.length, 2);
     }
 
     @Override
