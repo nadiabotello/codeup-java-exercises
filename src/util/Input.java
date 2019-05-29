@@ -33,11 +33,31 @@ public class Input {
     }
 
     public int getInt(){
-        return Integer.parseInt(getString("Please give me a number: "));
+
+        int number;
+
+        try{
+            number = Integer.valueOf(getString("Give me a number: "));
+        }catch(NumberFormatException nfe){
+            System.out.println("Input is not valid, make sure it's a number");
+            return getInt();
+        }
+
+        return number;
     }
 
+
     public double getDouble(){
-        return Double.parseDouble(getString("Give me a decimal"));
+        double number;
+
+        try{
+            number = Double.valueOf(getString("Give me a decimal: "));
+        }catch(NumberFormatException nfe){
+            System.out.println("Input is not valid, make sure it's a decimal");
+            return getDouble();
+        }
+
+        return number;
     }
 
     public double getDouble(double min, double max){
