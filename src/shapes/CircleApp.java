@@ -1,4 +1,5 @@
 package shapes;
+
 import util.Input;
 
 public class CircleApp {
@@ -8,12 +9,12 @@ public class CircleApp {
         Input input = new Input();
         Circle circle = new Circle(input.getDouble());
 
-                System.out.println(circle.getArea());
-                System.out.println(circle.getCircumference());
+        System.out.println(circle.getArea());
+        System.out.println(circle.getCircumference());
 
-                System.out.println("\n Would you like to make another circle? \n");
+        System.out.println("\n Would you like to make another circle? \n");
 
-                input.yesNo();
+        input.yesNo();
 
 
     }

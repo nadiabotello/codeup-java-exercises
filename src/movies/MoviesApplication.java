@@ -1,8 +1,6 @@
 package movies;
+
 import util.Input;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.Comparator;
 
 public class MoviesApplication {
 
@@ -19,10 +17,9 @@ public class MoviesApplication {
         System.out.println("3 - view movies in the drama category");
         System.out.println("4 - view movies in the horror category");
         System.out.println("5 - view movies in the scifi category \n");
-//        System.out.println(input.getInt());
 
 
-        if (input.getInt() == 1){
+        if (input.getInt() == 1) {
 
             for (Movie movie : Movies) {
                 System.out.println(movie.getName() + " -- " + movie.getCategory());
@@ -30,7 +27,5 @@ public class MoviesApplication {
 
         }
 
-
-
-
-    }}
+    }
+}

@@ -7,8 +7,8 @@ public class ServerNameGenerator {
 
         Random random = new Random();
 
-        String [] adj = {"fun", "good", "long", "beautiful", "watery", "lovely", "cold", "icy", "milky", "wonderful"};
-        String [] noun = {"dog", "doggo", "doge", "pupper", "good boy", "a very good boy", "pupperoni", "puppy", "pup", "pups"};
+        String[] adj = {"fun", "good", "long", "beautiful", "watery", "lovely", "cold", "icy", "milky", "wonderful"};
+        String[] noun = {"dog", "doggo", "doge", "pupper", "good boy", "a very good boy", "pupperoni", "puppy", "pup", "pups"};
 
 
         int num = random.nextInt(adj.length);

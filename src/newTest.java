@@ -25,7 +25,7 @@ public class newTest {
             }
         }
 
-        if (! Files.exists(dataFile)) {
+        if (!Files.exists(dataFile)) {
             try {
                 Files.createFile(dataFile);
             } catch (IOException e) {

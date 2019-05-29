@@ -4,9 +4,9 @@ import java.util.Random;
 public class MethodsExercises {
 
     public static void main(String[] args) {
-        printTotals(addition(2,3));
+        printTotals(addition(2, 3));
         printTotals(subtraction(10, 4));
-        printTotals(multiplication(5,4));
+        printTotals(multiplication(5, 4));
         printTotals(division(10, 2));
         printTotals(modulus(3, 1));
         printTotals(getMulti(10, 2));
@@ -15,37 +15,37 @@ public class MethodsExercises {
         dice();
     }
 
-    public static int addition(int a, int b){
+    public static int addition(int a, int b) {
         int total;
         total = a + b;
         return total;
     }
 
-    public static int subtraction(int a, int b){
+    public static int subtraction(int a, int b) {
         int total;
         total = a - b;
         return total;
     }
 
-    public static int multiplication(int a, int b){
+    public static int multiplication(int a, int b) {
         int total;
         total = a * b;
         return total;
     }
 
-    public static double division(double a, double b){
+    public static double division(double a, double b) {
         double total;
         total = a / b;
         return total;
     }
 
-    public static int modulus(int a, int b){
+    public static int modulus(int a, int b) {
         int total;
         total = a % b;
         return total;
     }
 
-    public static void printTotals(double total){
+    public static void printTotals(double total) {
         System.out.println(total);
     }
 
@@ -66,21 +66,20 @@ public class MethodsExercises {
         int num = scanner.nextInt();
 
 //        for (int i = 1; i <= max; i++) {
-            if (num >= min & num <= max) {
-                System.out.println("You are within range.");
-                return num;
+        if (num >= min & num <= max) {
+            System.out.println("You are within range.");
+            return num;
 
-            } else {
-                System.out.print("Please enter a number ONLY between 1 and 10: ");
-                return getInteger(min, max);
-            }
+        } else {
+            System.out.print("Please enter a number ONLY between 1 and 10: ");
+            return getInteger(min, max);
         }
+    }
 //        return num;
 //    }
 
 
-
-    public static long factorial(){
+    public static long factorial() {
 
         Scanner scanner = new Scanner(System.in);
 
@@ -92,7 +91,7 @@ public class MethodsExercises {
             System.out.print("You entered factorial number: !" + num + " \nWould you like to continue?");
             String answer = scanner.next();
 
-            if (answer.equalsIgnoreCase("yes")){
+            if (answer.equalsIgnoreCase("yes")) {
 
                 System.out.println("Here is your factorial output --");
 
@@ -104,18 +103,15 @@ public class MethodsExercises {
                 }
 
                 return result;
-            }  } else {
+            }
+        } else {
             System.out.print("Reload and try again.");
         }
         return num;
     }
 
 
-
-
-
-
-public static void dice(){
+    public static void dice() {
 
         Scanner scanner = new Scanner(System.in);
         Random random = new Random();
@@ -129,12 +125,11 @@ public static void dice(){
         String diceRoll = scanner.next();
 
 
-        if (diceRoll.equalsIgnoreCase("y")){
+        if (diceRoll.equalsIgnoreCase("y")) {
 
             do {
 
-                for (int i = 0; i < 1; i++)
-                {
+                for (int i = 0; i < 1; i++) {
                     int roll = random.nextInt(answer) + 1;
                     System.out.println("You rolled a " + roll + "\n\n Would you like to roll, again? [Y/N]");
                     String answer3 = scanner.next();
@@ -148,4 +143,5 @@ public static void dice(){
         }
 
 
-    }}
+    }
+}

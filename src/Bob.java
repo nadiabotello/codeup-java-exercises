@@ -2,36 +2,27 @@ import java.util.Scanner;
 
 public class Bob {
     public static void main(String[] args) {
-
-        Scanner scanner = new Scanner(System.in);
-
-        System.out.println("You're about to speak with Bob... Are you there, Bob?");
-        String answer = scanner.next();
-
-        if (answer.equalsIgnoreCase("sure.")){
-            System.out.println(answer.replace("sure.", "sure?"));
+//      Ask if they wanna talk to Bob
+        System.out.println("Do you want to talk to Bob?");
+        Scanner sc = new Scanner(System.in).useDelimiter("\n");
+//      Look for an answer
+        String answer = sc.next();
+//      If they say yes... start conversation
+        if (answer.equalsIgnoreCase("yes")) {
+            System.out.println("Say something.");
+            String userInput;
+            do {
+                userInput = sc.next();
+                if (userInput.endsWith("?")) {
+                    System.out.println("Sure.");
+                } else if (userInput.endsWith("!")) {
+                    System.out.println("Whoa, chill out!");
+                } else if (userInput.equals("")) {
+                    System.out.println("Fine.Be that way!");
+                } else {
+                    System.out.println("Whatever");
+                }
+            } while (!userInput.equals("You're grounded!"));
         }
-
-        System.out.println("CAN YOU TAKE OUT THE TRASH, BOB?");
-        String answer2 = scanner.next();
-
-        if (answer2.equalsIgnoreCase("Whoa, chill out!")){
-            System.out.println("No more Fortnite for you.");
-        }
-
-        System.out.println("Bob?");
-        String answer3 = scanner.next();
-
-        if (answer3.equalsIgnoreCase("Fine. Be that way!")){
-            System.out.println("...");
-        }
-
-        System.out.println("Do you have anything else to say?");
-        String answer4 = scanner.next();
-
-        if (answer4.equalsIgnoreCase(" ")){
-            System.out.println("Whatever");
-        }
-
     }
 }

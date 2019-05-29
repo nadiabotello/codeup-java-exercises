@@ -65,7 +65,6 @@ public class ConsoleAdventureGame {
                 } else if (userHealthN > enemyHealthN) {
                     enemyHealthN -= rand.nextInt(10);
                     System.out.println("They need another hit." + enemyHealthN + "\n");
-
                 }
 
 

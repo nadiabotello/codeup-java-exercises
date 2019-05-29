@@ -15,7 +15,7 @@ public class IOtest {
         Path folder = Paths.get(directory);
         Path file = Paths.get(directory, "info.txt");
 
-        if(Files.notExists(folder)){
+        if (Files.notExists(folder)) {
             try {
                 Files.createDirectories(folder);
                 System.out.println(folder + " was created");
@@ -24,7 +24,7 @@ public class IOtest {
             }
         }
 
-        if(!Files.exists(file)){
+        if (!Files.exists(file)) {
             try {
                 Files.createFile(file);
                 System.out.println(file + " file was created");
@@ -49,7 +49,7 @@ public class IOtest {
         try {
             List<String> namesFromFile = Files.readAllLines(file);
 
-            for (String line: namesFromFile) {
+            for (String line : namesFromFile) {
 //                if(name.equalsIgnoreCase("fer")){
 //                    System.out.println("That's me");
 //                }
@@ -59,7 +59,7 @@ public class IOtest {
                 System.out.println("name = " + name);
                 System.out.println("age = " + age);
 
-                if(name.equalsIgnoreCase("ryan")){
+                if (name.equalsIgnoreCase("ryan")) {
                     updatedList.add(name + " " + 42);
                     continue;
                 }
