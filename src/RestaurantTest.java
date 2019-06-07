@@ -8,10 +8,14 @@ public class RestaurantTest {
         System.out.println(dish.getNameOfDish());
         System.out.println(dish.wouldRecommend);
 
-        System.out.println("The " + dish.getNameOfDish() + " at " + dish.getCostInCents() + "cents is recommended!");
+        if (dish.wouldRecommend) {
 
-        dish.eat();
+            System.out.println("The " + dish.getNameOfDish() + " at " + dish.getCostInCents() + "cents is recommended!");
 
+            dish.eat();
+        } else {
+            System.out.println("Not recommended");
+        }
 
     }
 
